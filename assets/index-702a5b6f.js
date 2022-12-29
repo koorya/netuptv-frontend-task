@@ -11320,8 +11320,8 @@ const re = au,
     return Me(D0, {
       children: [
         Me(W0, {
-          poster: "../../netuptv-frontend-task/api/" + c,
-          keyframe: "../../netuptv-frontend-task/api/" + o,
+          poster: "/netuptv-frontend-task/api/" + c,
+          keyframe: "/netuptv-frontend-task/api/" + o,
           children: [
             l && H(sd, { children: "New on NetUP TV" }),
             Me(Q0, { children: [r, "/10"] }),
@@ -11957,7 +11957,7 @@ const re = au,
           );
           n({
             backgrounds: Oa.backgrounds.map(({ url: i }) => ({
-              url: "../../netuptv-frontend-task/api/" + i,
+              url: "/netuptv-frontend-task/api/" + i,
             })),
             items: o,
           });
