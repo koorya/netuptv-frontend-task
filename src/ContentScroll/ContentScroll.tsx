@@ -1,12 +1,12 @@
-import { Api } from '../const/api';
+import { Item } from '../const/api';
 import { ContentItem } from '../ContentItem/ContentItem';
 import { Container } from './ContentScroll.styled';
 
-export const ContentScroll = () => {
+export const ContentScroll = (props: { items: Item[] }) => {
   return (
     <Container>
-      {Api.items.map(item => (
-        <ContentItem item={item} />
+      {props.items.map((item, idx) => (
+        <ContentItem key={item.title + idx + '_item'} item={item} />
       ))}
     </Container>
   );
