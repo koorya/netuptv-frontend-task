@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { ContentScroll } from '../ContentScroll/ContentScroll';
+import { FindForm } from '../FindForm/FindForm';
 import { Header } from '../header/Header';
 import { BackGround, FindPageContainer } from './FindPage.styled';
 
@@ -9,6 +11,7 @@ export const FindPage: React.FC = () => {
   const [className, setClassName] = useState('');
 
   useEffect(() => {
+    // return;
     const interval = setTimeout(() => {
       let new_idx = idx + 1;
       if (new_idx === urls.length) new_idx = 0;
@@ -20,9 +23,11 @@ export const FindPage: React.FC = () => {
   }, [idx]);
 
   return (
-    <FindPageContainer url={urls[0]}>
-      <BackGround url={urls[idx]} className={className} />
+    <FindPageContainer>
       <Header />
+      <BackGround url={urls[idx]} className={className} />
+      <FindForm />
+      <ContentScroll />
     </FindPageContainer>
   );
 };

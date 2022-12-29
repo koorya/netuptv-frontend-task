@@ -10,6 +10,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: 'Source Sans Pro';
+  /* background-color: green; */
 
 }
 #root{
@@ -17,7 +18,7 @@ body {
 }
 
 
-body::after {
+body::afteaar {
   content: ' ';
   pointer-events: none;
   display: block;
