@@ -1,6 +1,6 @@
 import { Item } from '../const/api';
 import {
-  Button,
+  MoreButton,
   Container,
   Description,
   FlexBreak,
@@ -21,7 +21,7 @@ export const ContentItem = (props: { item: Item }) => {
         {is_new && <Label>New on NetUP TV</Label>}
         <IMBDLabel>{imdb_rate}/10</IMBDLabel>
         <FlexBreak />
-        <Button />
+        <MoreButton />
       </Poster>
 
       <Title>{title}</Title>

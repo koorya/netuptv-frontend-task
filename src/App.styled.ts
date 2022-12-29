@@ -18,7 +18,7 @@ body {
 }
 
 
-body::afteaar {
+body::after {
   content: ' ';
   pointer-events: none;
   display: block;

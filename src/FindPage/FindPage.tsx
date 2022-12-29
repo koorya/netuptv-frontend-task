@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ContentScroll } from '../ContentScroll/ContentScroll';
 import { FindForm } from '../FindForm/FindForm';
 import { Header } from '../header/Header';
-import { BackGround, FindPageContainer } from './FindPage.styled';
+import { BackGround, FindPageContainer, Title } from './FindPage.styled';
 
 const urls = ['../../api/background/sherlok.jpg', '../../api/background/stranger_things.jpg'];
 
@@ -27,6 +27,8 @@ export const FindPage: React.FC = () => {
       <Header />
       <BackGround url={urls[idx]} className={className} />
       <FindForm />
+      <Title>in the spotlight</Title>
+
       <ContentScroll />
     </FindPageContainer>
   );

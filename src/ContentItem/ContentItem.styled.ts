@@ -1,20 +1,19 @@
 import styled from 'styled-components';
+import { Button } from '../components/Button.styled';
 
 export const Container = styled.div`
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 `;
 
 export const Title = styled.h4`
-  /* H4 */
-
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  /* identical to box height */
-
-  /* Black 0 */
 
   color: #ffffff;
 `;
@@ -34,12 +33,15 @@ export const Genres = styled.div`
   font-size: 20px;
   line-height: 25px;
 
-  /* Black 0 */
-
   color: #ffffff;
 `;
 
-export const Button = styled.div`
+export const FlexBreak = styled.div`
+  height: 0px;
+  flex-basis: 100%;
+`;
+
+export const MoreButton = styled(Button)`
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
@@ -48,35 +50,18 @@ export const Button = styled.div`
 
   width: 160px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
+  margin: auto;
+  margin-top: 160px;
   &::after {
     content: 'More details';
     display: block;
   }
-  border: 2px lightgreen solid;
-  color: lightgreen;
-  &:hover {
-    background-color: green;
-  }
-
-  /* align-self: center; */
-  justify-self: center;
-
-  margin: auto;
-  margin-top: 160px;
-`;
-
-export const FlexBreak = styled.div`
-  height: 0px;
-  flex-basis: 100%;
 `;
 
 export const Poster = styled.div<{ poster: string; keyframe: string }>`
   overflow: hidden;
   flex-wrap: wrap;
+  margin-bottom: 18px;
   width: 368px;
   height: 208px;
   display: flex;

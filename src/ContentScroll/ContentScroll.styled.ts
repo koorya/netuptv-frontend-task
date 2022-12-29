@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 56px;
+  margin: 0px 56px;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;

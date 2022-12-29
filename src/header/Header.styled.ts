@@ -28,6 +28,8 @@ export const MenuStyled = styled.div`
 export const MenuButtonStyled = styled.button`
   border: none;
 
+  cursor: pointer;
+
   display: flex;
   flex-direction: row;
   align-items: center;
